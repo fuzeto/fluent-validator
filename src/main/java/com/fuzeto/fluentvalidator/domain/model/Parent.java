@@ -3,6 +3,7 @@ package com.fuzeto.fluentvalidator.domain.model;
 import lombok.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @Data
 @NoArgsConstructor
@@ -12,6 +13,7 @@ import java.util.List;
 @Builder
 public class Parent {
 
+    private UUID id;
     private String name;
     private Integer age;
     private List<String> cities;

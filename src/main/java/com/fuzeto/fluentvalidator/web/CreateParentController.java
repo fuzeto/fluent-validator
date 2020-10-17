@@ -19,7 +19,7 @@ public class CreateParentController {
     @PostMapping("/new")
     public ResponseEntity<ParentDto> create(@RequestBody ParentDto content) {
 
-        ParentDto parentCreated = parentBusiness.create(content);
+        ParentDto parentCreated = parentBusiness.save(content);
 
         return ResponseEntity.ok(parentCreated);
     }

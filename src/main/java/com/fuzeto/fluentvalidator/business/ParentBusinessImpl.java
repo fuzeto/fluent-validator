@@ -16,7 +16,7 @@ public class ParentBusinessImpl implements IParentBusiness {
     }
 
     @Override
-    public ParentDto create(ParentDto parentDto) {
+    public ParentDto save(ParentDto parentDto) {
 
         Parent parent = ParentMapper.toObject(parentDto);
 

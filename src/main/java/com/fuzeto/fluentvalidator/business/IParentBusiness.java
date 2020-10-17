@@ -5,5 +5,5 @@ import com.fuzeto.fluentvalidator.domain.model.Parent;
 
 public interface IParentBusiness {
 
-    public ParentDto create(ParentDto parentDto);
+    public ParentDto save(ParentDto parentDto);
 }
